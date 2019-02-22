@@ -1,0 +1,91 @@
+div, p h1, h2, h3, h4, h5{
+  margin: 0;
+  padding: 0;
+}
+.App {
+  text-align: center;
+}
+
+.banner {
+  animation: App-logo-spin infinite 20s linear;
+  height: 25vmin;
+  pointer-events: none;
+  margin: 30px 0;
+}
+.App-link {
+  color: #61dafb;
+}
+#listing {
+    max-width: 600px;
+    margin: 35px auto;
+}
+.joblist {
+    padding: 18px 10px;
+    border-top: 1px solid #ddd;
+    text-align: left;
+    list-style: none;
+    font-weight: 300;
+}
+.joblist_title{
+    line-height: 1.5rem;
+    font-weight: 400;
+    font-size: 1.2em;
+    color: #01c1df;
+}
+
+.joblist_company {
+  font-size: 1rem;
+    margin: 15px 0 10px;
+}
+.joblist_location {
+    font-size: .9rem;
+    color: #919191;
+    padding: 0 1rem 0 0;
+}
+.joblist_created {
+      font-size: .9rem;
+    color: #919191;
+    padding: 0 1rem 0 0;
+}
+.loader {
+  height: 4px;
+  max-width: 400px;
+  position: relative;
+  overflow: hidden;
+  background-color: #ddd;
+  margin: 50px auto;
+}
+.loader:before{
+  display: block;
+  position: absolute;
+  content: "";
+  left: -200px;
+  width: 200px;
+  height: 4px;
+  background-color: #2980b9;
+  animation: loading 2s linear infinite;
+}
+.loader:after {
+  content: 'Loading..';
+  display: block;
+  position: fixed;
+  width: 400px;
+  margin: 15px auto;
+}
+@keyframes loading {
+    from {left: -200px; width: 30%;}
+    50% {width: 30%;}
+    70% {width: 70%;}
+    80% { left: 50%;}
+    95% {left: 120%;}
+    to {left: 100%;}
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
